@@ -40,6 +40,8 @@ máximoYresto (x : xs)
   | length (x : xs) == 0 = error "La lista debe ser no vacía"
   | otherwise = (máximo (x : xs), filter (< (máximo (x : xs))) (x : xs))
 
+-- 3
+
 filterIndexParidad :: [a] -> Bool -> [a]
 filterIndexParidad (x : xs) par
   | length (x : xs) == 0 = error "La lista debe ser no vacía"
@@ -78,10 +80,7 @@ p_replicate' n x =
 divideA :: Integral a => a -> a -> Bool
 divideA x y
   | x == 0 = error "No se puede dividir por 0"
-  | otherwise =
-    if (mod y x == 0)
-      then True
-      else False
+  | otherwise = mod y x == 0
 
 {-
 divisores :: Integral a => a -> [a]

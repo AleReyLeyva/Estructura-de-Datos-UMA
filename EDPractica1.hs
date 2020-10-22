@@ -100,15 +100,19 @@ entre x (inf, sup) = inf <= x && x <= sup
 
 -- 7.a
 type TotalSegundos = Integer
+
 type Horas = Integer
+
 type Minutos = Integer
+
 type Segundos = Integer
+
 descomponer :: TotalSegundos -> (Horas, Minutos, Segundos)
 descomponer x = (horas, minutos, segundos)
-   where
-      horas = divMod x 3600 
-	   minutos = divMod (mod x 3600) 60  
-	   segundos = mod (mod x 3600) 60 
+  where
+    horas = fst (divMod x 3600)
+    minutos = fst (divMod (snd (divMod x 3600)) 60)
+    segundos = snd (divMod (snd (divMod x 3600)) 60)
 
 -- 7.b
 p_descomponer x =
@@ -124,11 +128,18 @@ p_descomponer x =
 
 -- 14.a
 potencia :: Integer -> Integer -> Integer
-potencia b n = undefined -- completar
+potencia b n
+  | n < 0 = error "El exponente debe ser positivo"
+  | n == 0 = 1
+  | otherwise = b * (potencia b (n -1))
 
 -- 14.b
 potencia' :: Integer -> Integer -> Integer
-potencia' b n = undefined -- completar
+potencia' x y
+  | y < 0 = error "El exponente debe ser positivo"
+  | y == 0 = 1
+  | (mod y 2 == 0) = ((potencia' x (div y 2)) ^ 2)
+  | (mod y 2 /= 0) = (x * ((potencia' x (div (y -1) 2)) ^ 2))
 
 -- 14.c
 p_pot b n =
