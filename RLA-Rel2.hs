@@ -177,7 +177,7 @@ take' n xs = [x | (p, x) <- zip [0 .. (n -1)] xs]
 
 -- 11.b
 drop' :: Int -> [a] -> [a]
-drop' n xs = [x | (p, x) <- (zip [1 .. (length xs)] xs), p > (length xs - n)]
+drop' n xs = [x | (p, x) <- (zip [1 .. (length xs)] xs), if (n < length xs) then p > n else p==0]
 
 -- 11.c
 p_take_drop n xs = n >= 0 ==> ((take' n xs) ++ (drop' n xs)) == xs
@@ -187,7 +187,5 @@ concat' :: [[a]] -> [a]
 concat' (x : xs) = foldr (++) [] (x : xs)
 
 --12.b
-{-
 concat'' :: [[a]] -> [a]
-concat'' [[a]] = [y |
--}
+concat'' xs = [y | (x,y) <- ([(x,y) | x <- xs, y <- x])] 
