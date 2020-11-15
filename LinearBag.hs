@@ -148,7 +148,7 @@ instance (Ord a, Arbitrary a) => Arbitrary (Bag a) where
 
 -- selectores
 isEmpty_empty = isEmpty empty == True
-isEmpty_insert x s = isEmpty (insert x s) == False
+isEmpty_insert x s = isEmpty (insert x s) == False 
 
 occurrences_empty x = occurrences x empty == 0
 occurrences_insert_1 x s = occurrences x (insert x s) == res
@@ -157,9 +157,8 @@ occurrences_insert_2 x y s = x /= y ==> occurrences x (insert y s) == occurrence
 
 -- transformadores
 delete_empty x = delete x empty == empty
-delete_insert_1 x s = delete x (insert x s) == res
-  where res = if (occurrences x s == 1) then s else s
-delete_insert_2 x y s  = x /= y ==> delete x (insert y s) == undefined
+delete_insert_1 x s = delete x (insert x s) == s
+delete_insert_2 x y s  = x /= y ==> delete x (insert y s) ==   
 
 type T = Char -- Integer, etc.
 
