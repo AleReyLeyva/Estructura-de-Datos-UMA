@@ -59,16 +59,19 @@ cotizacion :: [(String, Double)]
 cotizacion = [("apple", 116), ("intel", 35), ("google", 824), ("nvidia", 67)]
 
 buscarRec :: Eq a => a -> [(a, b)] -> [b]
-buscarRec x ys = undefined
+buscarRec x ys
+  | length ys == 0 = []
+  | length ys == 1 = if (fst (head ys) == x) then [snd (head ys)] else []
+  | otherwise = if (fst (head ys) == x) then [snd (head ys)] else buscarRec x (tail ys)
 
 buscarC :: Eq a => a -> [(a, b)] -> [b]
-buscarC x ys = undefined
+buscarC x ys = [(snd y) | y <- ys, (fst y) == x]
 
 buscarP :: Eq a => a -> [(a, b)] -> [b]
 buscarP x ys = undefined
 
 prop_buscar_OK :: (Eq a, Eq b) => a -> [(a, b)] -> Bool
-prop_buscar_OK x ys = undefined
+prop_buscar_OK x ys = (buscarRec x ys) == (buscarC x ys) && (buscarC x ys) == (buscarP x ys)
 
 {-
 
