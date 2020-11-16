@@ -149,7 +149,7 @@ instance (Ord a, Arbitrary a) => Arbitrary (Bag a) where
 
 -- selectores
 isEmpty_empty = isEmpty empty == True
-isEmpty_insert x s = isEmpty (insert x s) == False
+isEmpty_insert x s = isEmpty (insert x s) == False 
 
 occurrences_empty x = occurrences x empty == 0
 occurrences_insert_1 x s = occurrences x (insert x s) == 1 + occurrences x s
