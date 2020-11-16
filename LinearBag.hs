@@ -108,6 +108,7 @@ isEmpty _     = False
 insert :: Ord a => a -> Bag a -> Bag a
 insert x Empty         = Node x 1 Empty
 insert x (Node y oy s)
+  | x < y = Node x 1 (Node y oy s)
   | x == y = Node y (oy+1) s
   | otherwise = Node y oy (insert x s)
 
@@ -124,7 +125,7 @@ occurrences x (Node y oy s)
 delete :: (Ord a) => a -> Bag a -> Bag a
 delete x Empty         = Empty
 delete x (Node y oy s)
-  | x == y = s
+  | x == y || x < y = s
   | otherwise = Node y oy (delete x s)
 
 -- instancia de la clase Show para imprimir las bolsas
@@ -151,18 +152,20 @@ isEmpty_empty = isEmpty empty == True
 isEmpty_insert x s = isEmpty (insert x s) == False
 
 occurrences_empty x = occurrences x empty == 0
-occurrences_insert_1 x s = occurrences x (insert x s) == res
-  where res = if (occurrences x s == 0) then 1 else ((occurrences x s)+1)
+occurrences_insert_1 x s = occurrences x (insert x s) == 1 + occurrences x s
+
 occurrences_insert_2 x y s = x /= y ==> occurrences x (insert y s) == occurrences x s
 
 -- transformadores
 delete_empty x = delete x empty == empty
 delete_insert_1 x s = delete x (insert x s) == res
-  where res = if (occurrences x s == 1) then s else s
-delete_insert_2 x y s  = x /= y ==> delete x (insert y s) == undefined
+  where res = if (occurrences x s == 0) then s else (delete x s)
+delete_insert_2 x y s  = x /= y ==> delete x (insert y s) == res
+  where res = if (occurrences x s == 0) then (insert y s) else (delete x (insert y s))
 
 type T = Char -- Integer, etc.
 
+check_Bag :: IO ()
 check_Bag = do
                quickCheck (isEmpty_empty :: Bool)
                quickCheck (isEmpty_insert :: T -> Bag T -> Bool)
@@ -191,19 +194,29 @@ en cuenta las ocurrencias de cada elemento.
 -}
 
 union :: Ord a => Bag a -> Bag a -> Bag a
-union s Empty                     = undefined
-union Empty s                     = undefined
-union (Node x ox s) (Node y oy t) = undefined
+union s Empty                     = s
+union Empty s                     = s
+union (Node x ox s) (Node y oy t)
+  | ox == 1 = union s (insert x (Node y oy t))
+  | otherwise = s
 
 intersection :: Ord a => Bag a -> Bag a -> Bag a
-intersection s Empty                     = undefined
-intersection Empty s                     = undefined
-intersection (Node x ox s) (Node y oy t) = undefined
+intersection s Empty                     = Empty
+intersection Empty s                     = Empty
+intersection (Node x ox s) (Node y oy t) 
+  | occurrences_x == 0 = intersection s (Node y oy t)
+  | occurrences_x /= 0 && ox < occurrences_x = Node x ox (intersection s (Node y oy t))
+  | otherwise = Node x occurrences_x (intersection s (Node y oy t))
+     where occurrences_x = occurrences x (Node y oy t)
 
 difference :: Ord a => Bag a -> Bag a -> Bag a
-difference s Empty                     = undefined
-difference Empty s                     = undefined
-difference (Node x ox s) (Node y oy t) = undefined
+difference s Empty                     = s
+difference Empty s                     = Empty
+difference (Node x ox s) (Node y oy t)
+  | occurrences_x == 0 = Node x ox (difference s (Node y oy t))
+  | occurrences_x /= 0 && ox <= occurrences_x = difference s (Node y oy t)
+  | otherwise = Node x (ox-occurrences_x) (difference s (Node y oy t))
+     where occurrences_x = occurrences x (Node y oy t)
 
 -- propiedades QuickCheck para comprobar union, intersection y difference
 
