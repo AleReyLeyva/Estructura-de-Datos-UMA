@@ -2,7 +2,7 @@
 -- Estructuras de Datos. 2º ETSI Informática. UMA
 -- Práctica 3 - Implementación y Especificación del TAD Bag
 --
--- Alumno: APELLIDOS, NOMBRE
+-- Alumno: Rey Leyva, Alejandro
 -------------------------------------------------------------------------------
 
 module LinearBag

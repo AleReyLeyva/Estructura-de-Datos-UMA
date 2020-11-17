@@ -2,7 +2,7 @@
 -- Estructuras de Datos. 2º ETSI Informática. UMA
 -- Práctica 3 - Uso del TAD Bag mediante plegado
 --
--- Alumno: Alejandro Rey Leyva
+-- Alumno: Rey Leyva, Alejandro
 -------------------------------------------------------------------------------
 
 module BagClient where
