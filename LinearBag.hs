@@ -15,6 +15,7 @@ module LinearBag
   , union        -- :: Ord a => Bag a -> Bag a -> Bag a
   , intersection -- :: Ord a => Bag a -> Bag a -> Bag a
   , difference   -- :: Ord a => Bag a -> Bag a -> Bag a
+	, foldBag
 
   ) where
 
@@ -125,7 +126,7 @@ occurrences x (Node y oy s)
 delete :: (Ord a) => a -> Bag a -> Bag a
 delete x Empty         = Empty
 delete x (Node y oy s)
-  | x == y || x < y = s
+  | x == y = delete x s 
   | otherwise = Node y oy (delete x s)
 
 -- instancia de la clase Show para imprimir las bolsas
@@ -176,6 +177,13 @@ check_Bag = do
                quickCheck (delete_insert_1 :: T -> Bag T -> Bool)
                quickCheck (delete_insert_2 :: T -> T -> Bag T -> Property)
 
+-- Función foldBag
+foldBag :: Ord a => (a -> Int -> b -> b) -> b -> Bag a -> b
+foldBag f base bolsa = plegar bolsa
+	where
+		plegar Empty = base
+		plegar (Node x ox s) = f x ox (plegar s)
+
 -------------------------------------------------------------------------------
 -- Operaciones auxiliares del TAD Bag
 -------------------------------------------------------------------------------
@@ -198,7 +206,7 @@ union s Empty                     = s
 union Empty s                     = s
 union (Node x ox s) (Node y oy t)
   | ox == 1 = union s (insert x (Node y oy t))
-  | otherwise = s
+  | otherwise = union (Node x (ox-1) s) (insert x (Node y oy t))
 
 intersection :: Ord a => Bag a -> Bag a -> Bag a
 intersection s Empty                     = Empty
