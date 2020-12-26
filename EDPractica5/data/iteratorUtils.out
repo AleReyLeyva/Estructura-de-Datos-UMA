@@ -1,0 +1,26 @@
+Testing mostFrequent()
+empty = LinkedBag()
+most frequent char = null
+singleton = LinkedBag((S, 1) )
+most frequent char = S
+original = LinkedBag((E, 1) (M, 1) (a, 4) (c, 1) (d, 1) (e, 1) (g, 1) (h, 1) (l, 2) (n, 3) (r, 1) (u, 2) )
+most frequent char = a
+after inserting an n
+most frequent char = n
+the extra occurrence of n is deleted
+
+Testing the Bag iterator
+contents of the empty bag: 
+contents of the singleton bag: S 
+contents of the sample bag: E M a a a a c d e g h l l n n n r u u 
+
+Testing copyOf()
+copy of the empty bag: LinkedBag()
+copy of the singleton bag: LinkedBag((S, 1) )
+copy of the sample bag : LinkedBag((E, 1) (M, 1) (a, 4) (c, 1) (d, 1) (e, 1) (g, 1) (h, 1) (l, 2) (n, 3) (r, 1) (u, 2) )
+sample bag not modified: LinkedBag((E, 1) (M, 1) (a, 4) (c, 1) (d, 1) (e, 1) (g, 1) (h, 1) (l, 2) (n, 3) (r, 1) (u, 2) )
+the sample bag and its copy are not aliased:
+sample bag:LinkedBag((E, 1) (M, 1) (a, 4) (c, 1) (d, 2) (e, 1) (g, 1) (h, 1) (l, 2) (n, 3) (r, 1) (u, 2) )
+copy bag:  LinkedBag((E, 1) (M, 1) (a, 4) (c, 1) (d, 1) (e, 1) (g, 1) (h, 1) (l, 2) (n, 3) (r, 1) (u, 2) )
+auto-copy of the copy bag: LinkedBag((E, 1) (M, 1) (a, 4) (c, 1) (d, 1) (e, 1) (g, 1) (h, 1) (l, 2) (n, 3) (r, 1) (u, 2) )
+
