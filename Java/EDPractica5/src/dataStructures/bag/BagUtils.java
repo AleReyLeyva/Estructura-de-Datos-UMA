@@ -1,5 +1,7 @@
 package dataStructures.bag;
 
+import java.util.Iterator;
+
 public class BagUtils {
 
     /**
@@ -11,7 +13,16 @@ public class BagUtils {
      * @return the most frequent element in {@code b}
      */
     public static <T extends Comparable<? super T>> T mostFrequent(Bag<T> b) {
-        // TODO
-        return null;
+        Iterator<T> it = b.iterator();
+        T res = it.hasNext() ? it.next() : null;
+
+        while (it.hasNext()) {
+            T next = it.next();
+            if (b.occurrences(next) > b.occurrences(res)) { res = next; }
+            else if (b.occurrences(next) == b.occurrences(res)) {
+                res = next.compareTo(res) > 0 ? next : res;
+            }
+        }
+        return res;
     }
 }

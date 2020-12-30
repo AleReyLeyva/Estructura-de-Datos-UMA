@@ -34,7 +34,7 @@ public class BagTester {
         // choose text for the test
         String text;
         // text = cervantes;
-        text = dickens;
+        text = cervantes;
 
         System.out.println(b.isEmpty());
 

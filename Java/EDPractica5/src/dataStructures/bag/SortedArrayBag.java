@@ -10,6 +10,8 @@ package dataStructures.bag;
 
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.StringJoiner;
 
 public class SortedArrayBag<T extends Comparable<? super T>> implements Bag<T> {
 
@@ -38,7 +40,7 @@ public class SortedArrayBag<T extends Comparable<? super T>> implements Bag<T> {
     private int nextFree;
 
     public SortedArrayBag() {
-        this.value = new T[INITIAL_CAPACITY];
+        this.value = (T[]) new Comparable[INITIAL_CAPACITY];
         this.count = new int[INITIAL_CAPACITY];
         this.nextFree = 0;
     }
@@ -96,36 +98,75 @@ public class SortedArrayBag<T extends Comparable<? super T>> implements Bag<T> {
         if (value[index] != null && value[index].equals(item)) {
             count[index]++;
         } else {
+            for (int i=nextFree; i>index; i--) {
+                value[i] = value[i-1];
+                count[i] = count[i-1];
+            }
+            value[index] = item;
+            count[index] = 1;
 
+            nextFree++;
         }
     }
 
     @Override
     public int occurrences(T item) {
-        // TODO
-        return 0;
+        int index = locate(item);
+
+        if (value[index] != null && value[index].equals(item)) return count[index];
+        else return 0;
     }
 
     @Override
     public void delete(T item) {
-        // TODO
+        int index = locate(item);
+
+        if (value[index] != null && value[index].equals(item)) {
+            if (count[index] > 1) {
+                count[index]--;
+            } else {
+                for (int i=index; i<value.length-1; i++) {
+                    value[i] = value[i+1];
+                    count[i] = count[i+1];
+                }
+                nextFree--;
+            }
+        }
     }
 
     @Override
     public void copyOf(Bag<T> source) {
         // TODO
-        // you cannot use insert on 'this'
     }
 
     @Override
     public String toString() {
-        // TODO
-        return null;
+        StringJoiner res = new StringJoiner(" ", " Bag [", "]");
+        for (int i=0; i<value.length; i++) {
+            res.add("(" + value[i] + ", " + count[i] + ")");
+        }
+        return res.toString();
     }
 
     @Override
     public Iterator<T> iterator() {
-        // TODO
-        return null;
+        return new SortedArrayBagIterator();
+    }
+
+    private class SortedArrayBagIterator implements Iterator<T> {
+        int index;
+
+        public SortedArrayBagIterator() { index = 0; }
+
+        public boolean hasNext() { return index < nextFree; }
+
+        public T next() {
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
+
+            index++;
+            return value[index-1];
+        }
     }
 }
