@@ -103,8 +103,7 @@ public class SortedLinkedBag<T extends Comparable<? super T>> implements Bag<T> 
 
     @Override
     public void copyOf(Bag<T> source) {
-        // TODO
-        // you cannot use insert on 'this'
+        this.first = ((SortedLinkedBag<T>) source).first;
     }
 
     @Override

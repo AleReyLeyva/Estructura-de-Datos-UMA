@@ -136,7 +136,10 @@ public class SortedArrayBag<T extends Comparable<? super T>> implements Bag<T> {
 
     @Override
     public void copyOf(Bag<T> source) {
-        // TODO
+        SortedArrayBag<T> copy = (SortedArrayBag<T>) source;
+        this.value = copy.value;
+        this.count = copy.count;
+        this.nextFree = copy.nextFree;
     }
 
     @Override
