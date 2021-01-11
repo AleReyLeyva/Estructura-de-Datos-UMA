@@ -1,13 +1,11 @@
-/**
+/*
  * Práctica 6 - Árboles binarios de búsqueda aumentados
  * Estructuras de Datos.
  *
- * APELLIDOS, NOMBRE:
+ * APELLIDOS, NOMBRE: Rey Leyva, Alejandro
  *
  * Binary Search trees implementation using augmented nodes storing weight of nodes
  */
-
-package dataStructures.searchTree;
 
 /**
  * Search tree implemented using an unbalanced binary search tree augmented with
@@ -188,27 +186,72 @@ public class AugmentedBST<T extends Comparable<? super T>> {
 
     // returns i-th smallest key in BST (i=0 means returning the smallest value
     // in tree, i=1 the next one and so on).
-    public T select(int i) {
-        return null;
+    public T select(int i) { return selectRec(i, root); }
+
+    private T selectRec(int i, Tree<T> tree) {
+        if (tree == null) return null;
+        Tree<T> lt = tree.left, rt = tree.right;
+        int weightLT = lt.weight;
+        if (i == weightLT) return tree.key;
+        else if (i < weightLT) return selectRec(i, lt);
+        else return selectRec(i-weightLT-1, rt);
     }
 
     // returns largest key in BST whose value is less than or equal to k.
     public T floor(T k) {
-        return null;
+        return floorRec(k, root);
+    }
+
+    private T floorRec(T k, Tree<T> tree) {
+        Tree<T> lt = tree.left, rt = tree.right;
+        T key = lt.key;
+        if (k.equals(key) || tree.weight == 1)
+            return key;
+        else if (key.compareTo(k) > 0)
+            return floorRec(k, lt);
+        else
+            return floorRec(k, rt);
     }
 
     // returns smallest key in BST whose value is greater than or equal to k.
     public T ceiling(T k) {
-        return null;
+        return ceilingRec( k, root);
+    }
+
+    private T ceilingRec(T k, Tree<T> tree) {
+        Tree<T> lt = tree.left, rt = tree.right;
+        T key = lt.key;
+        if (k.equals(key) || tree.weight == 1) return key;
+        else if (key.compareTo(k) < 0)
+            return floorRec(k, rt);
+        else return floorRec(k, lt);
     }
 
     // returns number of keys in BST whose values are less than k.
     public int rank(T k) {
-        return 0;
+        return rankRec(k, root);
+    }
+
+    private int rankRec(T k, Tree<T> tree) {
+        Tree<T> lt = tree.left, rt = tree.right;
+        T key = lt.key;
+        if (key.compareTo(k) < 0)
+            return 1 + rankRec(k, lt) + rankRec(k, rt);
+        else
+            return rankRec(k, lt) + rankRec(k, rt);
     }
 
     // returs number of keys in BST whose values are in range lo to hi.
     public int size(T low, T high) {
-        return 0;
+        return sizeRec(low, high, root);
+    }
+
+    private int sizeRec(T low, T high, Tree<T> tree) {
+        Tree<T> lt = tree.left, rt = tree.right;
+        T key = lt.key;
+        if (key.compareTo(low) > 0 && key.compareTo(high) < 0)
+            return 1 + sizeRec(low, high, lt) + sizeRec(low, high, rt);
+        else
+            return sizeRec(low, high, lt) + sizeRec(low, high, rt);
     }
 }

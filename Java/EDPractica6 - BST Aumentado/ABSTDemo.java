@@ -1,15 +1,15 @@
+
+
 public class ABSTDemo {
 
     public static void main(String[] args) {
         AugmentedBST<Integer> tree = new AugmentedBST<>();
-        int[] xs = new int[]{20, 10, 30, 5, 15, 25, 35};
+        int[] xs = new int[] {20, 10, 30, 5, 15, 25, 35};
         // int[] xs = {60, 30, 20, 10, 5, 15, 90, 80, 85, 95};
         for (int x : xs) {
             tree.insert(x);
         }
         System.out.println(tree);
-        String dot = tree.toDot("Ejemplo");
-        System.out.println(dot);
 
         checkSelect(tree);
 

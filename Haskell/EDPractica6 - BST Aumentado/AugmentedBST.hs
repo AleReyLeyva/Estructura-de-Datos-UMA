@@ -2,7 +2,7 @@
 -- Estructuras de Datos. Grado en Informática. UMA.
 -- Práctica 6 - Árboles binarios de búsqueda aumentados
 --
--- APELLIDOS, NOMBRE:
+-- APELLIDOS, NOMBRE: Rey Leyva, Alejandro
 -------------------------------------------------------------------------------
 
 module DataStructures.SearchTree.AugmentedBST
@@ -411,7 +411,13 @@ alfabeto = minABST ['a' .. 'z']
 -- Nothing
 
 select :: Ord a => Int -> ABST a -> Maybe a
-select = undefined
+select i Empty = Nothing 
+select i (Node x w lt rt)
+  | i > w = Nothing 
+  | i == pesoLT = Just x
+  | i < pesoLT = select i lt
+  | i > pesoLT = select (i-pesoLT-1) rt
+    where pesoLT = weight lt
 
 ----------------
 -- floor
@@ -433,7 +439,12 @@ select = undefined
 -- Just 35
 
 floor :: Ord a => a -> ABST a -> Maybe a
-floor = undefined
+floor _ Empty = Nothing 
+floor k (Node x w lt rt)
+  | k < minim (Node x w lt rt) = Nothing 
+  | k == x || w == 1 = Just x
+  | k < x = floor k lt
+  | otherwise = floor k rt
 
 ----------------
 -- rank
@@ -461,7 +472,10 @@ floor = undefined
 -- 5
 
 rank :: Ord a => a -> ABST a -> Int
-rank = undefined
+rank _ Empty = 0
+rank k (Node x w lt rt)
+  | x < k = 1 + rank k lt + rank k rt
+  | otherwise = rank k lt + rank k rt
 
 ----------------
 -- size
@@ -483,7 +497,10 @@ rank = undefined
 -- 5
 
 size :: Ord a => a -> a -> ABST a -> Int
-size = undefined
+size _ _ Empty = 0
+size low high (Node x w lt rt)
+  | x >= low && x <= high = 1 + size low high lt + size low high rt
+  | otherwise = size low high lt + size low high rt
 
 ----------------
 -- partition
@@ -534,4 +551,10 @@ size = undefined
 --      ('o',1) ('q',1) ('s',1)     ('v',1)     ('y',1)
 
 partition :: Ord a => a -> ABST a -> (ABST a, ABST a)
-partition = undefined
+partition _ Empty = (Empty, Empty)
+partition a (Node x w lt rt)
+  | a == x = (lt, rt)
+  | a > x = (Node x w lt (fst (particionRT)), snd (particionRT))
+  | a < x = (fst (particionLT), Node x w (snd (particionLT)) rt)
+    where particionRT = partition a rt
+          particionLT = partition a lt
