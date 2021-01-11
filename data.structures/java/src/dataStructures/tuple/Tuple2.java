@@ -40,7 +40,7 @@ public class Tuple2<A,B> {
 	 * Returns representation of tuple as a String.
 	 */
 	@Override public String toString() { 
-    String className = getClass().getName().substring(getClass().getPackage().getName().length()+1);  
+    	String className = getClass().getSimpleName();
 		return className+"("+elem1+","+elem2+")"; 
 	}
 }

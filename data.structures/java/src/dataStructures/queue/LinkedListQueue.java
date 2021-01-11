@@ -14,7 +14,8 @@ public class LinkedListQueue<T> implements Queue<T> {
 
     /**
      * Creates an empty queue.
-     * <p>Time complexity: O(1)
+     * <p>
+     * Time complexity: O(1)
      */
     public LinkedListQueue() {
         elements = new LinkedList<>();
@@ -22,42 +23,52 @@ public class LinkedListQueue<T> implements Queue<T> {
 
     /**
      * {@inheritDoc}
-     * <p>Time complexity: O(1)
+     * <p>
+     * Time complexity: O(1)
      */
+    @Override
     public void enqueue(T elem) {
         elements.addLast(elem);
     }
 
     /**
      * {@inheritDoc}
-     * <p>Time complexity: O(1)
+     * <p>
+     * Time complexity: O(1)
      */
+    @Override
     public boolean isEmpty() {
         return elements.isEmpty();
     }
 
     /**
      * {@inheritDoc}
-     * <p>Time complexity: O(1)
+     * <p>
+     * Time complexity: O(1)
      *
-     * @throws EmptyQueueException {@inheritDoc}
+     * @throws EmptyQueueException
+     *             {@inheritDoc}
      */
+    @Override
     public T first() {
         if (isEmpty()) {
-            throw new EmptyQueueException("pop: empty queue");
+            throw new EmptyQueueException("first on empty queue");
         }
         return elements.getFirst();
     }
 
     /**
      * {@inheritDoc}
-     * <p>Time complexity: O(1)
+     * <p>
+     * Time complexity: O(1)
      *
-     * @throws EmptyQueueException {@inheritDoc}
+     * @throws EmptyQueueException
+     *             {@inheritDoc}
      */
+    @Override
     public void dequeue() {
         if (isEmpty()) {
-            throw new EmptyQueueException("pop: empty stack");
+            throw new EmptyQueueException("dequeue on empty queue");
         }
         elements.removeFirst();
     }
@@ -65,8 +76,9 @@ public class LinkedListQueue<T> implements Queue<T> {
     /**
      * Returns representation of queue as a String.
      */
+    @Override
     public String toString() {
-        String className = getClass().getName().substring(getClass().getPackage().getName().length() + 1);
+        String className = getClass().getSimpleName();
         String text = className + "(";
         Iterator<T> it = elements.iterator();
         while (it.hasNext()) {

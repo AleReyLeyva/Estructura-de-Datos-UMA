@@ -109,7 +109,7 @@ public class ArrayQueue<T> implements Queue<T> {
 	 * Returns representation of queue as a String.
 	 */
   	@Override public String toString() {
-    String className = getClass().getName().substring(getClass().getPackage().getName().length()+1);  
+    String className = getClass().getSimpleName();
 		String s = className+"(";
 		int f = first;
 		for(int i=0; i<size; i++) { 

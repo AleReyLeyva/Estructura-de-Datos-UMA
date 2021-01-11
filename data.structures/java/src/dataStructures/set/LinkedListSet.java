@@ -1,5 +1,5 @@
 /**
- * @author Pepe Gallardo, Data Structures, Grado en Informática. UMA.
+ * @author Pepe Gallardo, Data Structures, Grado en Inform�tica. UMA.
  *
  * Sets implemented using Java's linked lists
  */
@@ -36,7 +36,7 @@ public class LinkedListSet<T extends Comparable<? super T>> implements Set<T> {
     public int size() { return elements.size(); }
 
     public String toString() {
-        String className = getClass().getName().substring(getClass().getPackage().getName().length()+1);
+        String className = getClass().getSimpleName();
         String text = className+"(";
         Iterator<T> it = elements.iterator();
         while(it.hasNext()) {

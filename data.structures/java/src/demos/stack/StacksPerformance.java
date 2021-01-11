@@ -12,7 +12,7 @@ import dataStructures.stack.LinkedStack;
 
 public class StacksPerformance {
 		
-	public enum Implementation { WithArray, Linked};
+	public enum Implementation { WithArray, Linked }
 	
 	public static double test(Implementation impl, int seed, int length) {
 		long t0 = System.currentTimeMillis();
@@ -20,7 +20,7 @@ public class StacksPerformance {
 				                                              : new LinkedStack<>(); 
 		RandomStack.fill(stack, seed, length);
 		long t1 = System.currentTimeMillis();
-		return (t1-t0) / 10e3; //execution time in seconds
+		return (t1-t0) / 1e3; //execution time in seconds
 	}	
 	
 	static double avgTime(Implementation impl, int tests) {
@@ -41,7 +41,6 @@ public class StacksPerformance {
 		
 		System.out.printf("Average execution time for LinkedStack is %f seconds\n", t1);
 		System.out.printf("Average execution time for ArrayStack is %f seconds\n", t2);
-		System.out.printf("ArrayStack is %.2f times faster", t1/t2);		
-		
+		System.out.printf("ArrayStack is %.2f times faster", t1/t2);
 	}	
 }

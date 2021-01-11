@@ -12,7 +12,7 @@ import dataStructures.list.LinkedList;
 
 public class ListsPerformance {
 		
-	public enum Implementation { WithArray, Linked};
+	public enum Implementation { WithArray, Linked }
 	
 	public static double test(Implementation impl, int seed, int length) {
 		long t0 = System.currentTimeMillis();
@@ -20,7 +20,7 @@ public class ListsPerformance {
 				                                            : new LinkedList<>();
 		RandomList.fill(list, seed, length);
 		long t1 = System.currentTimeMillis();
-		return (t1-t0) / 10e3; //execution time in seconds
+		return (t1-t0) / 1e3; //execution time in seconds
 	}	
 	
 	static double avgTime(Implementation impl, int tests) {
@@ -41,7 +41,6 @@ public class ListsPerformance {
 		
 		System.out.printf("Average execution time for LinkedList is %f seconds\n", t1);
 		System.out.printf("Average execution time for ArrayList is %f seconds\n", t2);
-		System.out.printf("ArrayList is %.2f times faster", t1/t2);		
-		
+		System.out.printf("ArrayList is %.2f times faster", t1/t2);
 	}	
 }

@@ -1,5 +1,5 @@
 /**
- * @author Pepe Gallardo, Data Structures, Grado en Informática. UMA.
+ * @author Pepe Gallardo, Data Structures, Grado en Informï¿½tica. UMA.
  *
  * Sets implemented using a sorted linked list
  */
@@ -55,7 +55,7 @@ public class SortedLinkedSet<T extends Comparable<? super T>> implements Set<T> 
             current = current.next;
         }
 
-        return (current != null && current.elem.equals(item));
+        return (current != null) && current.elem.equals(item);
     }
 
     public void delete(T item) {
@@ -79,7 +79,7 @@ public class SortedLinkedSet<T extends Comparable<? super T>> implements Set<T> 
     }
 
     public String toString() {
-        String className = getClass().getName().substring(getClass().getPackage().getName().length()+1);
+        String className = getClass().getSimpleName();
         String text = className+"(";
         for (Node<T> p = first; p != null; p = p.next) {
             text +=  p.elem + (p.next != null ? "," : "");

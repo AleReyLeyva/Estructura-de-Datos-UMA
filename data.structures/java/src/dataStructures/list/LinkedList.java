@@ -165,7 +165,7 @@ public class LinkedList<T> implements List<T> {
 	 */
 	@Override
 	public String toString() {
-    String className = getClass().getName().substring(getClass().getPackage().getName().length()+1);  
+    String className = getClass().getSimpleName();
 		String s = className+"(";
 		for (Node<T> node = first; node != null; node = node.next)
 			s += node.elem + (node.next != null ? "," : "");

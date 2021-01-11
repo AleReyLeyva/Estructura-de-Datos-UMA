@@ -179,7 +179,7 @@ public class ArrayList<T> implements List<T> {
 	 * Returns representation of list as a String.
 	 */
 	@Override public String toString() {
-    	String className = getClass().getName().substring(getClass().getPackage().getName().length()+1);
+    	String className = getClass().getSimpleName();
 		String s = className+"(";
 		for(int i=0; i<size; i++) 
 			s += elements[i] + (i<size-1 ? "," : "");

@@ -12,7 +12,7 @@ import dataStructures.queue.LinkedQueue;
 
 public class QueuesPerformance {
 	
-	public enum Implementation { WithArray, Linked};
+	public enum Implementation { WithArray, Linked }
 	
 	public static double test(Implementation impl, int seed, int length) {
 		long t0 = System.currentTimeMillis();
@@ -20,7 +20,7 @@ public class QueuesPerformance {
 				                                              : new LinkedQueue<>(); 
 		RandomQueue.fill(queue, seed, length);
 		long t1 = System.currentTimeMillis();
-		return (t1-t0) / 10e3; //execution time in seconds
+		return (t1-t0) / 1e3; //execution time in seconds
 	}	
 	
 	static double avgTime(Implementation impl, int tests) {
@@ -41,7 +41,6 @@ public class QueuesPerformance {
 		
 		System.out.printf("Average execution time for LinkedQueue is %f seconds\n", t1);
 		System.out.printf("Average execution time for ArrayQueue is %f seconds\n", t2);
-		System.out.printf("ArrayQueue is %.2f times faster", t1/t2);		
-		
+		System.out.printf("ArrayQueue is %.2f times faster", t1/t2);
 	}	
 }

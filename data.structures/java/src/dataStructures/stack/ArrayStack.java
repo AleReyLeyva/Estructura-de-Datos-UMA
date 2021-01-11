@@ -95,7 +95,7 @@ public class ArrayStack<T> implements Stack<T> {
 	 * Returns representation of stack as a String.
 	 */
 	@Override public String toString() {
-    String className = getClass().getName().substring(getClass().getPackage().getName().length()+1);  
+    String className = getClass().getSimpleName();
 		String s = className+"(";
 		for(int i=nextFree-1; i>=0; i--) 
 			s += elements[i] + (i>0 ? "," : "");

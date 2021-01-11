@@ -74,7 +74,7 @@ public class LinkedStack<T> implements Stack<T> {
 	 * Returns representation of stack as a String.
 	 */
 	@Override public String toString() {
-    String className = getClass().getName().substring(getClass().getPackage().getName().length()+1);  
+    String className = getClass().getSimpleName();
 		String s = className+"(";
 		for(Node<T> node = top; node != null; node = node.next) 
 			s += node.elem + (node.next != null ? "," : "");

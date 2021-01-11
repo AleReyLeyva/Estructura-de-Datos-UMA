@@ -1,7 +1,7 @@
 /**
- * @author Paco Gutiérrez, Data Structures, Grado en Informática. UMA.
+ * @author Paco Gutiï¿½rrez, Data Structures, Grado en Informï¿½tica. UMA.
  *
- * Stack implemented using java´s linked lists.
+ * Stack implemented using javaï¿½s linked lists.
  */
 
 package dataStructures.stack;
@@ -66,7 +66,7 @@ public class LinkedListStack<T> implements Stack<T> {
      * Returns representation of stack as a String.
      */
     public String toString() {
-        String className = getClass().getName().substring(getClass().getPackage().getName().length() + 1);
+        String className = getClass().getSimpleName();
         String text = className + "(";
         Iterator<T> it = elements.iterator();
         while (it.hasNext()) {

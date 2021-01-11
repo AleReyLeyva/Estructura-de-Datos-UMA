@@ -7,7 +7,7 @@
 
 module Demos.Set.SetDemo where
 
-import DataStructures.Set.SortedLinearSet
+import DataStructures.Set.LinearSet
 import DataStructures.Set.SetAxioms(setAxioms)
 
 
