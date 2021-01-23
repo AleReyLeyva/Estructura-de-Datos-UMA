@@ -1,0 +1,13 @@
+digraph tree1_RotatedAt_6 {
+node [fontname="Arial", fontcolor=red, shape=circle, style=filled, color="#66B268", fillcolor="#AFF4AF" ];
+edge [color = "#0070BF"];
+363771819 [label="8"];
+363771819 -> 668386784;
+668386784 [label="6"];
+668386784 -> 1329552164;
+1329552164 [label="3"];
+l668386784 [style=invis];
+668386784 -> l668386784;
+l363771819 [style=invis];
+363771819 -> l363771819;
+}

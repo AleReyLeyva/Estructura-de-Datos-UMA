@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d83ebba-0482-43c3-a980-41d83f179cff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/empty.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/singleton.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/singleton_DecoratedWith_4.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/singleton_RotatedAt_5.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/tree1.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/tree1_RotatedAt_6.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BinTreeDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/ListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/tree/BinTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/tree/BinTreeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EDPractica6 - BST Aumentado/AugmentedBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EDPractica6 - BST Aumentado/AugmentedBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EDPractica6 - BST Aumentado/out/production/EDPractica6 - BST Aumentado/AugmentedBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EDPractica6 - BST Aumentado/out/production/EDPractica6 - BST Aumentado/AugmentedBST.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1n3ZN3oBYz3pTAxEPVtinTe6Juh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alere\Google Drive\Universidad\2ºAño\Estructura-de-Datos-UMA\Java\Practica-7-Evaluable\src" />
+      <recent name="C:\Users\alere\Google Drive\Universidad\2ºAño\Estructura-de-Datos-UMA\Java\Practica-7-Evaluable" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BinTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BinTreeDemo" />
+      <module name="Practica-7-Evaluable" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BinTreeDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d83ebba-0482-43c3-a980-41d83f179cff" name="Default Changelist" comment="" />
+      <created>1610620692148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610620692148</updated>
+      <workItem from="1610620693292" duration="3752000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -189,12 +189,33 @@ public class AugmentedBST<T extends Comparable<? super T>> {
     public T select(int i) { return selectRec(i, root); }
 
     private T selectRec(int i, Tree<T> tree) {
-        if (tree == null) return null;
-        Tree<T> lt = tree.left, rt = tree.right;
-        int weightLT = lt.weight;
-        if (i == weightLT) return tree.key;
-        else if (i < weightLT) return selectRec(i, lt);
-        else return selectRec(i-weightLT-1, rt);
+        // Si el árbol es null o el index está fuera de rango
+        if (tree == null || i > tree.weight || i < 0)
+            return null;
+        // Si es un nodo hoja
+        else if (tree.weight == 1)
+            return tree.key;
+        // Si el nodo hijo izq es null y queremos la key más pequeña
+        else if (tree.left == null && i==0)
+            return tree.key;
+        // Si el nodo hijo izq es simplemente null
+        else if (tree.left == null)
+            return selectRec(i-1, tree.right);
+
+
+        int weightLT = tree.left.weight;
+        /*
+        Si el peso del nodo hijo izq es igual que el index buscado,
+        implica que nos referimos a él mismo
+        */
+        if (i == weightLT)
+            return tree.key;
+        // Si el index buscado es menor que el peso del nodo hijo izq, buscamos por el nodo izq
+        else if (i < weightLT)
+            return selectRec(i, tree.left);
+        // Si el index buscado es mayor que el peso del nodo hijo izq, buscamos por el nodo dcho
+        else
+            return selectRec(i-weightLT-1, tree.right);
     }
 
     // returns largest key in BST whose value is less than or equal to k.
@@ -203,28 +224,54 @@ public class AugmentedBST<T extends Comparable<? super T>> {
     }
 
     private T floorRec(T k, Tree<T> tree) {
-        Tree<T> lt = tree.left, rt = tree.right;
-        T key = lt.key;
-        if (k.equals(key) || tree.weight == 1)
+        // Si el árbol es null
+        if (tree == null)
+            return null;
+
+        T key = tree.key;
+        // Si es un nodo hoja
+        if (tree.weight == 1 && key.compareTo(k) <= 0)
             return key;
-        else if (key.compareTo(k) > 0)
-            return floorRec(k, lt);
+        // Si k == key
+        else if (k.equals(key))
+            return key;
+        // Si el nodo hijo izq es null y k < key
+        else if (tree.left == null && k.compareTo(key) <= 0)
+            return null;
+        // Si k < key
+        else if (k.compareTo(key) <= 0)
+            return floorRec(k, tree.left);
+        // Si k > key
         else
-            return floorRec(k, rt);
+            return floorRec(k, tree.right);
     }
 
     // returns smallest key in BST whose value is greater than or equal to k.
     public T ceiling(T k) {
-        return ceilingRec( k, root);
+        return ceilingRec( k, root );
     }
 
     private T ceilingRec(T k, Tree<T> tree) {
-        Tree<T> lt = tree.left, rt = tree.right;
-        T key = lt.key;
-        if (k.equals(key) || tree.weight == 1) return key;
-        else if (key.compareTo(k) < 0)
-            return floorRec(k, rt);
-        else return floorRec(k, lt);
+        // Si el árbol es null
+        if (tree == null)
+            return null;
+
+        T key = tree.key;
+        T resRec;
+        // Si es un nodo hoja
+        if (key.compareTo(k) >= 0)
+            if (tree.left == null)
+                return key;
+            else {
+                resRec = ceilingRec(k, tree.left);
+                if (resRec != null) return resRec;
+                else return key;
+            }
+        else
+            if (tree.right == null)
+                return null;
+            else
+                return ceilingRec(k, tree.right);
     }
 
     // returns number of keys in BST whose values are less than k.
@@ -233,12 +280,44 @@ public class AugmentedBST<T extends Comparable<? super T>> {
     }
 
     private int rankRec(T k, Tree<T> tree) {
-        Tree<T> lt = tree.left, rt = tree.right;
-        T key = lt.key;
-        if (key.compareTo(k) < 0)
-            return 1 + rankRec(k, lt) + rankRec(k, rt);
+        // Si el arbol es null
+        if (tree == null)
+            return 0;
+
+        T key = tree.key;
+
+        // Si key == k
+        if (key.equals(k))
+            // Si la rama izq != null => Toda la rama izq es < k
+            if (tree.left != null)
+                return tree.left.weight;
+            // Si la rama izq == null => Ningun nodo es < k
+            else
+                return 0;
+
+         // Si key > k
+        else if (key.compareTo(k) > 0)
+            // Si la rama izq != null => Veamos que nodos de la rama izq son < k
+            if (tree.left != null)
+                return rankRec(k, tree.left);
+            // Si la rama izq == null => Ningun nodo es < k
+            else
+                return 0;
+
+        // Si key < k
         else
-            return rankRec(k, lt) + rankRec(k, rt);
+            // Si tiene dos nodos hijos, él mismo y su rama izq son < k, sumados los posibles menores de la rama dcha
+            if (tree.left != null && tree.right != null)
+                return tree.left.weight + 1 + rankRec(k, tree.right);
+            // Si la rama dcha es nula, sólo el mismo y la rama izq son < k
+            else if (tree.left != null)
+                return tree.left.weight + 1;
+            // Si la rama izq es nula, él mismo más los posibles de la rama dcha son solución
+            else if (tree.right != null)
+                return 1 + rankRec(k, tree.right);
+            // Si es nodo hoja, sólo el mismo es < k
+            else
+                return 1;
     }
 
     // returs number of keys in BST whose values are in range lo to hi.
@@ -247,11 +326,12 @@ public class AugmentedBST<T extends Comparable<? super T>> {
     }
 
     private int sizeRec(T low, T high, Tree<T> tree) {
-        Tree<T> lt = tree.left, rt = tree.right;
-        T key = lt.key;
-        if (key.compareTo(low) > 0 && key.compareTo(high) < 0)
-            return 1 + sizeRec(low, high, lt) + sizeRec(low, high, rt);
+        int rankLow = rank(low);
+        int rankHigh = rank(high);
+        int size = rankHigh-rankLow;
+        if (isElem(high))
+            return ++size;
         else
-            return sizeRec(low, high, lt) + sizeRec(low, high, rt);
+            return size;
     }
 }
