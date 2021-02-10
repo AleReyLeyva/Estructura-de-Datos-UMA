@@ -175,10 +175,10 @@ valuesOf k (Node x xs s)
 filterValues :: (Ord a, Eq b) => (b -> Bool)-> SetMultiMap a b -> SetMultiMap a b
 filterValues p Empty = Empty
 filterValues p (Node x xs s)
-  | S.isEmpty postSet = (filterValues p s)
-  | otherwise = Node x (postSet) (filterValues p s)
+  | S.isEmpty postSet = filterValues p s
+  | otherwise = Node x postSet (filterValues p s)
        where
-         f x resto = if (p x) then (S.insert x resto) else resto
+         f x resto = if p x then S.insert x resto else resto
          postSet = S.fold f (mkSet []) xs
 
 -- | Ejercicio 2 - Axiomas del TAD

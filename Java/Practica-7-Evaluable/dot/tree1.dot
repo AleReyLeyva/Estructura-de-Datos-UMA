@@ -1,9 +1,9 @@
 digraph tree1 {
 node [fontname="Arial", fontcolor=red, shape=circle, style=filled, color="#66B268", fillcolor="#AFF4AF" ];
 edge [color = "#0070BF"];
-1921595561 [label="6"];
-1921595561 -> 565760380;
-565760380 [label="3"];
-1921595561 -> 6566818;
-6566818 [label="8"];
+295530567 [label="6"];
+295530567 -> 2003749087;
+2003749087 [label="3"];
+295530567 -> 1324119927;
+1324119927 [label="8"];
 }

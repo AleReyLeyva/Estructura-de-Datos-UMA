@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2bcda6bf-efa8-43fd-a00a-3687bcf3617a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practica-8-Huffman.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HuffmanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/dictionary/AVLDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/dictionary/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/dictionary/SortedLinkedDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/either/Either.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/either/Left.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/either/Right.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/heap/BinaryHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/heap/EmptyHeapException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/heap/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/heap/WBLeftistHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/ListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/priorityQueue/BinaryHeapPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/priorityQueue/EmptyPriorityQueueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/priorityQueue/LinkedPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/priorityQueue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/priorityQueue/WBLeftistHeapPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/queue/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/queue/EmptyQueueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/queue/LinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/queue/LinkedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/queue/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/searchTree/AVL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/searchTree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/searchTree/EmptySearchTreeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/searchTree/SearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/set/AVLSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/set/BSTSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/set/LinkedListSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/set/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/set/SortedLinkedSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/stack/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/stack/EmptyStackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/stack/LinkedListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/stack/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataStructures/tuple/Tuple2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/huffman/Huffman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/huffman/HuffmanException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/huffman/WLeafTree.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1o7hGKPvkk397MPxSJpbCDhrWVi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="HuffmanTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HuffmanTest" />
+      <module name="Practica-8-Huffman" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HuffmanTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bcda6bf-efa8-43fd-a00a-3687bcf3617a" name="Default Changelist" comment="" />
+      <created>1612643440833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612643440833</updated>
+      <workItem from="1612643442793" duration="4284000" />
+      <workItem from="1612687287622" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

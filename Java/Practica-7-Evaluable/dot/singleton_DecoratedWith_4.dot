@@ -1,9 +1,9 @@
 digraph singleton_DecoratedWith_4 {
 node [fontname="Arial", fontcolor=red, shape=circle, style=filled, color="#66B268", fillcolor="#AFF4AF" ];
 edge [color = "#0070BF"];
-596512129 [label="5"];
-596512129 -> 824318946;
-824318946 [label="4"];
-596512129 -> 930990596;
-930990596 [label="4"];
+1922154895 [label="5"];
+1922154895 -> 883049899;
+883049899 [label="4"];
+1922154895 -> 2093176254;
+2093176254 [label="4"];
 }

@@ -99,17 +99,19 @@ public class BinTree<T extends Comparable<? super T>> {
 
     // Ejercicio 1
 
-    public T maximum() { return maximumRec(root); }
+    public T maximum() {
+        if (this.isEmpty())
+            throw new BinTreeException("Árbol vacío");
+        else
+            return maximumRec(root);
+    }
 
     private T maximumRec(Tree<T> node) {
-        // Si el arbol es vacío
-        if (node == null)
-            throw new BinTreeException("Árbol vacío");
         T elem = node.elem;
         // Si es un nodo hoja
         if (node.left == null && node.right == null)
             return elem;
-            // Si la rama izq es null
+        // Si la rama izq es null
         else if (node.left == null) {
             T maxRight = maximumRec(node.right);
             if (elem.compareTo(maxRight) > 0)
@@ -141,62 +143,50 @@ public class BinTree<T extends Comparable<? super T>> {
     // Ejercicio 2
 
     public int numBranches() {
-        // Si el arbol es vacío
-        if (root == null)
-            throw new BinTreeException("Árbol vacío");
 
-        // Si el árbol es un solo nodo
-        if (root.left == null && root.right == null)
+        // Si el árbol es vacío o de un solo nodo
+        if (this.isEmpty() || root.left == null && root.right == null)
             return 0;
 
-            // Si la rama izq es null
-        else if (root.left == null)
-            return numBranchesRec(root.right);
-            // Si la rama dcha es null
-        else if (root.right == null)
-            return numBranchesRec(root.left);
-            // Si tiene dos ramas
-        else
-            return numBranchesRec(root.left) + numBranchesRec(root.right);
-
+        return numBranchesRec(root.left) + numBranchesRec(root.right);
     }
 
     private int numBranchesRec(Tree<T> node) {
-        T elem = node.elem;
-
-        if (node.left == null && node.right == null)
+        if (node == null) {
+            return 0;
+        }
+        else if (node.left == null && node.right == null)
             return 1;
-        else if (node.right == null)
-            return numBranchesRec(node.left);
-        else if (node.left == null)
-            return numBranchesRec(node.right);
         else
             return numBranchesRec(node.left) + numBranchesRec(node.right);
     }
 
     // Ejercicio 3
 
-    public List<T> atLevel (int i) {
+    public List<T> atLevel(int i) {
         int level = 0;
         // Si el index está fuera de rango
         if (i < 0)
-            return null;
+            return new LinkedList<>();
         else
             return atLevelRec(i, root);
     }
 
 
     private List<T> atLevelRec(int i, Tree<T> node) {
-        List <T> res = new LinkedList<>();
-        List <T> resLeft = new LinkedList<>();
-        List <T> resRight = new LinkedList<>();
 
-        if (node != null) {
-            if (i==0)
+        List<T> resLeft = new LinkedList<>();
+        List<T> resRight = new LinkedList<>();
+
+        if (node == null) {
+            return new LinkedList<>();
+        } else {
+            List<T> res = new LinkedList<>();
+            if (i == 0)
                 res.append(node.elem);
             else {
-                resLeft = atLevelRec(i-1, node.left);
-                resRight = atLevelRec(i-1, node.right);
+                resLeft = atLevelRec(i - 1, node.left);
+                resRight = atLevelRec(i - 1, node.right);
                 for (T elem : resLeft) {
                     res.append(elem);
                 }
@@ -204,65 +194,55 @@ public class BinTree<T extends Comparable<? super T>> {
                     res.append(elem);
                 }
             }
+            return res;
         }
-        return res;
     }
 
     // Ejercicio 4
-
+    /*
     public void rotateLeftAt(T x) {
-        Tree<T> nodeX = search(x, root);
-        Tree<T> nodeY;
-        if (nodeX.right != null) {
-            nodeY = nodeX.right;
-            nodeX.left = nodeX;
-            nodeX = nodeY;
-            nodeX.right = nodeY.left;
+        if (!this.isEmpty()) {
+            Tree<T> centro = root;
+            if (centro.right != null && root.elem.equals(x)) {
+                Tree<T> newTree = new Tree<>(null, null, null);
+                newTree.left = centro;
+                if (centro.right.left != null) {
+                    newTree.left.right = centro.right.left;
+                } else {
+                    newTree.left.right = null;
+                }
+                if (centro.right != null) {
+                    newTree.elem = centro.right.elem;
+                }
+                if (centro.right != null && centro.right.right != null) {
+                    newTree.right = centro.right.right;
+                }
+                root = newTree;
+            }
         }
     }
-
-    private Tree<T> search (T x, Tree<T> node) {
-        if ( node == null )
-            return null;
-
-        T elem = node.elem;
-
-        if (elem.equals(x))
-            return node;
-        else if (elem.compareTo(x) > 0) {
-            if (node.left != null)
-                return search(x, node.left);
-            else
-                return null;
-        } else
-            if (node.right != null)
-                return search(x, node.right);
-            else
-                return null;
-    }
+	*/
 
     // Ejercicio 5
 
-    public void decorate(T x) { decorateRec(x, root); }
+    public void decorate(T x) {
+        if (this.isEmpty()) {
+            this.root = new Tree<>(x, null, null);
+        } else {
+            decorateRec(x, root);
+        }
+    }
 
     private void decorateRec(T x, Tree<T> node) {
-        if (node != null) {
-            if (node.left != null && node.right != null) {
-                decorateRec(x, node.left);
-                decorateRec(x, node.right);
-            }
-            if (node.left != null) {
-                decorateRec(x, node.left);
-                node.right = new Tree(x, null, null);
-            }
-            else if (node.right != null) {
-                decorateRec(x, node.right);
-                node.left = new Tree(x, null, null);
-            }
-            else {
-                node.left = new Tree(x, null, null);
-                node.right = new Tree(x, null, null);
-            }
+        if (node.left != null) {
+            decorateRec(x, node.left);
+        } else {
+            node.left = new Tree<>(x, null, null);
+        }
+        if (node.right != null) {
+            decorateRec(x, node.right);
+        } else {
+            node.right = new Tree<>(x, null, null);
         }
     }
 }

@@ -1,0 +1,13 @@
+digraph "tree3-trimmed" {
+node [fontname="Arial", fontcolor=red, shape=circle, style=filled, color="#66B268", fillcolor="#AFF4AF" ];
+edge [color = "#0070BF"];
+1854731462 [label="9"];
+1854731462 -> 317574433;
+317574433 [label="12"];
+1854731462 -> 885284298;
+885284298 [label="6"];
+885284298 -> 1389133897;
+1389133897 [label="4"];
+l885284298 [style=invis];
+885284298 -> l885284298;
+}

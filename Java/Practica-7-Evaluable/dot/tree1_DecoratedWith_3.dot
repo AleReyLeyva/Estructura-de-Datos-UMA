@@ -1,0 +1,17 @@
+digraph tree1_DecoratedWith_3 {
+node [fontname="Arial", fontcolor=red, shape=circle, style=filled, color="#66B268", fillcolor="#AFF4AF" ];
+edge [color = "#0070BF"];
+1854731462 [label="6"];
+1854731462 -> 317574433;
+317574433 [label="3"];
+317574433 -> 885284298;
+885284298 [label="3"];
+317574433 -> 1389133897;
+1389133897 [label="3"];
+1854731462 -> 1534030866;
+1534030866 [label="8"];
+1534030866 -> 664223387;
+664223387 [label="3"];
+1534030866 -> 824909230;
+824909230 [label="3"];
+}

@@ -15,7 +15,7 @@ public class BinTreeDemo {
         int[] rotateValues = {5, 5, 6, 8, 4};
         int[] decorateValues = {1, 4, 3, 2, 7};
 
-        for (int i = 1; i < trees.size(); i++) {
+        for (int i = 2; i < trees.size(); i++) {
             System.out.println("Tests for tree " + treeNames[i]);
             saveTreeToDot(treeNames[i], trees.get(i));
             testMaximum(trees.get(i));

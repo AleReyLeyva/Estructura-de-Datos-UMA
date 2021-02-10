@@ -45,12 +45,13 @@ mys = insert 1 'a' (
 -- |
 -- >>> compose mxs mys
 -- "granada" --> LinearSet('d','e','f')
--- "malaga" --> LinearSet('a','b','d','e')
+
+
 
 compose :: (Ord a, Ord b, Eq c) => SetMultiMap a b -> SetMultiMap b c -> SetMultiMap a c
 compose xs ys = fold f empty xs
   where
     f k v restoMap = fold g restoMap ys
-      where g q w restoMap2 = if (q == v) then insert k w restoMap2 else restoMap2
+      where g q w restoMap2 = if q == v then insert k w restoMap2 else restoMap2
 
 

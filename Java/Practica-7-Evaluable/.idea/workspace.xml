@@ -2,24 +2,240 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d83ebba-0482-43c3-a980-41d83f179cff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dot/empty.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dot/singleton.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dot/singleton_DecoratedWith_4.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dot/singleton_RotatedAt_5.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dot/tree1.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dot/tree1_RotatedAt_6.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinTreeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataStructures/list/ListException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataStructures/tree/BinTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dataStructures/tree/BinTreeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EDPractica6 - BST Aumentado/AugmentedBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EDPractica6 - BST Aumentado/AugmentedBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EDPractica6 - BST Aumentado/out/production/EDPractica6 - BST Aumentado/AugmentedBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EDPractica6 - BST Aumentado/out/production/EDPractica6 - BST Aumentado/AugmentedBST.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/ED-Feb2017.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Haskell/SparseVector.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Haskell/SparseVectorAxioms.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Java/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Java/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Java/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Java/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Java/Java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Java/src/dataStructures/vector/SparseVector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Java/src/dataStructures/vector/SparseVectorTesting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2017/Java/src/dataStructures/vector/VectorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Haskell/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Haskell/.idea/Haskell.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Haskell/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Haskell/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Haskell/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/Java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/dictionary/AVLDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/dictionary/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/either/Either.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/either/Left.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/either/Right.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/list/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/list/ListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/searchTree/AVL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/searchTree/EmptySearchTreeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/searchTree/SearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/set/DisjointSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/set/DisjointSetDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/stack/EmptyStackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/stack/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Febrero-2018/Java/src/dataStructures/tuple/Tuple2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/AVLBiDictionary.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/BiDictionaryDemo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/DataStructures/Dictionary/AVLDictionary.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/DataStructures/Graphics/DrawTrees.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/DataStructures/Graphics/DummyDrawTrees.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/DataStructures/Graphics/Vectorial.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/DataStructures/Graphics/VectorialCairo.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/DataStructures/SearchTree/AVL.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/DataStructures/SearchTree/BST.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/Haskell/DataStructures/Set/BSTSet.hs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/dictionary/BiDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/dictionary/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/dictionary/HashBiDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/dictionary/HashDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/either/Either.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/either/Left.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/either/Right.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/hashTable/HashPrimes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/hashTable/HashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/hashTable/SeparateChainingHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/list/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/list/ListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/searchTree/AVL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/searchTree/EmptySearchTreeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/searchTree/SearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/set/AVLSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/set/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/stack/EmptyStackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/stack/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Examenes/Septiembre-2018/src/dataStructures/tuple/Tuple2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/tree1_DecoratedWith_3.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/tree2.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/tree2_DecoratedWith_2.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/tree3.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dot/tree3_DecoratedWith_7.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/Practica-8-Huffman.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/HuffmanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/dictionary/AVLDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/dictionary/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/dictionary/SortedLinkedDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/either/Either.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/either/Left.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/either/Right.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/heap/BinaryHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/heap/EmptyHeapException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/heap/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/heap/WBLeftistHeap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/list/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/list/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/list/ListException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/priorityQueue/BinaryHeapPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/priorityQueue/EmptyPriorityQueueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/priorityQueue/LinkedPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/priorityQueue/PriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/priorityQueue/WBLeftistHeapPriorityQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/queue/ArrayQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/queue/EmptyQueueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/queue/LinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/queue/LinkedQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/queue/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/searchTree/AVL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/searchTree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/searchTree/EmptySearchTreeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/searchTree/SearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/set/AVLSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/set/BSTSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/set/LinkedListSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/set/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/set/SortedLinkedSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/stack/ArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/stack/EmptyStackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/stack/LinkedListStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/stack/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/dataStructures/tuple/Tuple2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/huffman/Huffman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/huffman/HuffmanException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica-8-Huffman/src/huffman/WLeafTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/EDPractica1.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/EDPractica2 - Extra.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/EDPractica2.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/EDPractica4 - Evaluable/SetMultiMap.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/EDPractica4 - Evaluable/SetMultiMap.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/EDPractica4 - Evaluable/SetMultiMapClient.hs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Haskell/EDPractica4 - Evaluable/SetMultiMapClient.hs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/RLA-Rel1.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Haskell/RLA-Rel2.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot/singleton.dot" beforeDir="false" afterPath="$PROJECT_DIR$/dot/singleton.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot/singleton_DecoratedWith_4.dot" beforeDir="false" afterPath="$PROJECT_DIR$/dot/singleton_DecoratedWith_4.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot/singleton_RotatedAt_5.dot" beforeDir="false" afterPath="$PROJECT_DIR$/dot/singleton_RotatedAt_5.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot/tree1.dot" beforeDir="false" afterPath="$PROJECT_DIR$/dot/tree1.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dot/tree1_RotatedAt_6.dot" beforeDir="false" afterPath="$PROJECT_DIR$/dot/tree1_RotatedAt_6.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica-7-Evaluable/BinTreeDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica-7-Evaluable/BinTreeDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica-7-Evaluable/dataStructures/tree/BinTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica-7-Evaluable/dataStructures/tree/BinTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinTreeDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructures/tree/BinTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructures/tree/BinTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Dictionary/AVLDictionary.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Dictionary/BSTDictionary.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Dictionary/DictionaryAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Graphics/DrawTrees.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Graphics/DummyDrawTrees.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Graphics/Vectorial.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Heap/HeapSort.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Heap/WBLeftistHeap.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/PriorityQueue/LinearPriorityQueue.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/PriorityQueue/PriorityQueueAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/PriorityQueue/WBLeftistHeapPriorityQueue.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Queue/LinearQueue.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Queue/QueueAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Queue/TwoListsQueue.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/SearchTree/AVL.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/SearchTree/AVLTreeAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/SearchTree/BST.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/SearchTree/BSTAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Set/BSTSet.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Set/LinearSet.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Set/ListSet.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Set/SetAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Set/SortedLinearSet.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Stack/LinearStack.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Stack/StackAxioms.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Stack/StackOnList.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Util/Random.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/DataStructures/Util/TestDatatype.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/Dictionary/AVLDictDemo.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/Heap/HeapSortDemo.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/Heap/WBLeftistHeapDemo.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/PriorityQueue/PriorityQueueDemo.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/Queue/Josephus.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/Queue/QueueDemo.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/Queue/QueuesPerformance.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/SearchTree/AVLDemo.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/SearchTree/BSTDemo.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/Set/SetDemo.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/Stack/PolishNotation.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/haskell/Demos/Stack/StackDemo.hs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/dictionary/AVLDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/dictionary/Dictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/dictionary/SortedLinkedDictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/either/Either.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/either/Left.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/either/Right.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/heap/BinaryHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/heap/EmptyHeapException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/heap/Heap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/heap/WBLeftistHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/list/ArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/list/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/list/List.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/list/ListException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/priorityQueue/BinaryHeapPriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/priorityQueue/EmptyPriorityQueueException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/priorityQueue/LinkedPriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/priorityQueue/PriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/priorityQueue/WBLeftistHeapPriorityQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/queue/ArrayQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/queue/EmptyQueueException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/queue/LinkedListQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/queue/LinkedQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/queue/Queue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/searchTree/AVL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/searchTree/BST.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/searchTree/EmptySearchTreeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/searchTree/SearchTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/set/AVLSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/set/BSTSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/set/LinkedListSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/set/Set.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/set/SortedLinkedSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/stack/ArrayStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/stack/EmptyStackException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/stack/LinkedListStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/stack/LinkedStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/stack/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/dataStructures/tuple/Tuple2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/heap/HeapSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/list/ListsPerformance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/list/RandomList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/queue/Josephus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/queue/QueueDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/queue/QueuesCorrectness.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/queue/QueuesPerformance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/queue/RandomQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/searchTree/SearchTreeDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/stack/RandomStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/stack/StackDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data.structures/java/src/demos/stack/StacksPerformance.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +259,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -58,17 +275,6 @@
     <configuration name="BinTreeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BinTreeDemo" />
       <module name="Practica-7-Evaluable" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,6 +294,14 @@
       <option name="presentableId" value="Default" />
       <updated>1610620692148</updated>
       <workItem from="1610620693292" duration="3752000" />
+      <workItem from="1612687331802" duration="6643000" />
+      <workItem from="1612703229737" duration="95000" />
+      <workItem from="1612778620739" duration="758000" />
+      <workItem from="1612779412639" duration="170000" />
+      <workItem from="1612779601692" duration="1592000" />
+      <workItem from="1612781210061" duration="251000" />
+      <workItem from="1612781477706" duration="3452000" />
+      <workItem from="1612810245264" duration="147000" />
     </task>
     <servers />
   </component>
@@ -104,8 +318,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
